@@ -153,6 +153,8 @@ Error message and password prompt
 
 <li>$:/.giffmex/Buttons/more-tiddler-edit-actions</li>
 
+<li>$:/.giffmex/EditorToolbar/hourminute</li>
+
 <li>$:/.giffmex/EditTemplate/custom</li>
 
 <li>$:/.giffmex/language/toolbar</li>
@@ -304,6 +306,8 @@ Error message and password prompt
 <li>$:/plugins/tiddlywiki/highlight</li>
 
 <li>$:/state/FABs</li>
+
+<li>$:/state/import/select-all</li>
 
 <li>$:/state/sidebar</li>
 
@@ -715,6 +719,15 @@ background-color: &lt;&lt;colour tiddler-info-background&gt;&gt;;}
 {{$:/core/ui/EditorToolbar/editor-height-dropdown}}
 
 &lt;/$reveal&gt;</pre>
+</div>
+<div caption="Stamp the present hour and minute into your notes" condition="[&lt;targetTiddler&gt;!has[type]] [&lt;targetTiddler&gt;type[text/vnd.tiddlywiki]]" created="20200512165755063" description="Stamp the present hour and minute into your notes" icon="$:/core/images/timestamp-on" modified="20200512170325812" shortcuts="" tags="$:/tags/EditorToolbar" title="$:/.giffmex/EditorToolbar/hourminute">
+<pre>&lt;$action-sendmessage
+	$message=&quot;tm-edit-text-operation&quot;
+	$param=&quot;wrap-selection&quot;
+	prefix=&quot;&lt;&lt;now 'hh:0mmpm'&gt;&gt;&quot;
+	suffix=&quot;&quot;
+/&gt;
+</pre>
 </div>
 <div created="20191220121428434" list-before="$:/core/ui/EditTemplate/body" modified="20200521203314462" tags="$:/giffmex/bigeditarea $:/giffmex/stroll" title="$:/.giffmex/EditTemplate/custom">
 <pre>&quot;&quot;&quot;
@@ -10868,7 +10881,7 @@ $:/config/ViewToolbarButtons/Visibility/$(listItem)$
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[$:/plugins/sq/editor-autolist]]</pre>
+# [[$:/.giffmex/EditorToolbar/hourminute]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -12543,6 +12556,9 @@ exports.context = contextWidget;
 <div created="20201211174351787" modified="20201211174351787" title="$:/state/FABs">
 <pre>no</pre>
 </div>
+<div created="20201211180220287" modified="20201211180220615" title="$:/state/import/select-all">
+<pre>checked</pre>
+</div>
 <div created="20201211171705214" modified="20201211174643027" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
@@ -12562,9 +12578,9 @@ exports.context = contextWidget;
 <pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
-<pre>yes</pre>
+<pre>no</pre>
 </div>
-<div created="20201211180004208" list="$:/Import $:/ControlPanel" modified="20201211180004208" title="$:/StoryList">
+<div created="20201211180228032" list="$:/ControlPanel $:/Import" modified="20201211180228032" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200519141000553" list="$:/.giffmex/Buttons/more-tiddler-edit-actions $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200521145647980" tags="$:/giffmex/bigeditarea $:/giffmex/stroll" title="$:/tags/EditToolbar">
