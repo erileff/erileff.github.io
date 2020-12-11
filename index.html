@@ -157,6 +157,8 @@ Error message and password prompt
 
 <li>$:/GitHub/Username</li>
 
+<li>$:/Import</li>
+
 <li>$:/isEncrypted</li>
 
 <li>$:/plugins/tiddlywiki/highlight</li>
@@ -378,6 +380,8 @@ Error message and password prompt
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
+
+<li>KeyboardSnippets</li>
 
 </ul>
 </p>
@@ -9787,6 +9791,11 @@ Error message and password prompt
 <div created="20201211152223848" modified="20201211152224518" title="$:/GitHub/Username">
 <pre>erileff</pre>
 </div>
+<div status="complete" title="$:/Import">
+<pre>The following tiddlers were imported:
+
+# [[KeyboardSnippets]]</pre>
+</div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
@@ -9870,9 +9879,9 @@ Error message and password prompt
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
-<pre>yes</pre>
+<pre>no</pre>
 </div>
-<div created="20201211153901396" list="$:/ControlPanel" modified="20201211153901396" title="$:/StoryList">
+<div created="20201211154215987" list="$:/Import $:/ControlPanel" modified="20201211154215987" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10880,8 +10889,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20201211153905716" dependents="" description="Basic theme" modified="20201211153905716" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" requires-reload="no" server-url="https://tiddlywiki.com/library/v5.1.22/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.22">
 <pre></pre>
 </div>
-<div created="20201211153908058" modified="20201211153942470" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
-<pre>highlight.j</pre>
+<div created="20201211153908058" modified="20201211154219411" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
+<pre></pre>
 </div>
 <div created="20201211153905689" modified="20201211153905689" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.22/index.html" url="https://tiddlywiki.com/library/v5.1.22/index.html">
 <pre>loaded</pre>
@@ -10994,6 +11003,26 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
         }
     }
 }</pre>
+</div>
+<div bag="default" revision="0" summary="allows to use keyboard shortcuts for the common wikitext markup" tags="[[Danielo Rodríguez]] Editing Developer Plugin Solutions" title="KeyboardSnippets" url="http://braintest.tiddlyspot.com/#keyboard-snippets">
+<pre>While you can customize the key bindings, here are the defaults defined by this plugin...
+
+|!Combination|!snippet|!renders as|
+|`ctrl+b`| `'' ''` | ''bold'' |
+|`ctrl+i`| `// //` | //italics// |
+|`ctrl+u`| ` __ __` | __underline__ |
+|`ctrl+s`| `,, ,, ` | ,,subscript,, |
+|`ctrl+l`| `*` | non ordered list |
+|`ctrl+o`| `#` | ordered list |
+|`ctrl+k`| | code |
+|`alt+t`| `|| ` | table cell |
+|`alt+h`| `|!|` | table head |
+|`alt+s`| ` ~~ ~~` | ~~strikeout~~ |
+|`alt+w` | `&lt;$&gt;` | widget call |
+|`alt+z` | `{{!!}}` | variable transclusion |
+|`ctrl+m` |  `&lt;&lt;&gt;&gt;` | macro call |
+|`ctrl+alt+t` | `{{}}` | transclusion |
+|`ctrl+alt+l` | `[[]]`| link |</pre>
 </div>
 
 
